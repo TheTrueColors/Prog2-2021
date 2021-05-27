@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1621861550 source:c:\users\giotu\onedrive - università degli studi di catania\documents\github\esercitazione17maggio-thetruecolors\queue\main.cpp
+	<iostream>
+	"queue.h"
+
+1621861626 c:\users\giotu\onedrive - università degli studi di catania\documents\github\esercitazione17maggio-thetruecolors\queue\include\queue.h
+	<iostream>
+
+1621928722 source:c:\users\giotu\onedrive - università degli studi di catania\desktop\prog2 2021\queue\main.cpp
+	<iostream>
+	"queue.h"
+
+1621928821 c:\users\giotu\onedrive - università degli studi di catania\desktop\prog2 2021\queue\include\queue.h
+	<iostream>
+

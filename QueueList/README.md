@@ -1,0 +1,1 @@
+Questo progetto si occupa di implementare una struttura di tipo CODA utilizzando le liste doppiamente linkate con sentinelle
