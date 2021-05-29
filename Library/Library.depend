@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1622276427 source:c:\users\giotu\onedrive - università degli studi di catania\documents\github\prog2-2021\library\main.cpp
+	<iostream>
+	<sstream>
+	"Library.h"
+	"AuthorList.h"
+
+1622274674 c:\users\giotu\onedrive - università degli studi di catania\documents\github\prog2-2021\library\include\library.h
+	"Book.h"
+	"Node.h"
+	<iostream>
+	<fstream>
+	<string>
+
+1622277155 c:\users\giotu\onedrive - università degli studi di catania\documents\github\prog2-2021\library\include\book.h
+	"AuthorList.h"
+	<iostream>
+	<fstream>
+	<string>
+
+1622276796 c:\users\giotu\onedrive - università degli studi di catania\documents\github\prog2-2021\library\include\authorlist.h
+	"Author.h"
+	"Node.h"
+	<iostream>
+	<fstream>
+	<string>
+
+1622274244 c:\users\giotu\onedrive - università degli studi di catania\documents\github\prog2-2021\library\include\author.h
+	<iostream>
+	<fstream>
+	<string>
+
+1622272747 c:\users\giotu\onedrive - università degli studi di catania\documents\github\prog2-2021\library\include\node.h
+
