@@ -53,9 +53,9 @@ public:
 
     string toString()
     {
-         stringstream out;
-         out<<"Author:"<<endl<<"Name: "<<this->getName()<<endl<<"Surname: "<<this->getSurname()<<endl<<"Date of Birth: "<<this->getDate()<<endl<<endl;
-         return out.str();
+        stringstream out;
+        out<<"Author:"<<endl<<"Name: "<<this->getName()<<endl<<"Surname: "<<this->getSurname()<<endl<<"Date of Birth: "<<this->getDate()<<endl<<endl;
+        return out.str();
 
     }
 

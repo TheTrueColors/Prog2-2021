@@ -43,16 +43,19 @@ public:
         return;
     }
 
-    Node<Author> *search(string name, string surname) {
-		Node<Author> *cur = head->getNext();
-		while(cur != NULL && cur->getValue().getName() != name || cur->getValue().getSurname() != surname ) {
-			cur = cur->getNext();
-		}
-		if(!cur) {
-			throw runtime_error("Author not found");
-			return NULL;
-		}
-		return cur;
+    Node<Author> *search(string name, string surname)
+    {
+        Node<Author> *cur = head->getNext();
+        while(cur != NULL && cur->getValue().getName() != name || cur->getValue().getSurname() != surname )
+        {
+            cur = cur->getNext();
+        }
+        if(!cur)
+        {
+            throw runtime_error("Author not found");
+            return NULL;
+        }
+        return cur;
     }
 
     Node<Author> *getHead()

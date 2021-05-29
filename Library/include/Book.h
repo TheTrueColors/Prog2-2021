@@ -84,7 +84,7 @@ public:
 
     AuthorList getList()const
     {
-      return aList;
+        return aList;
     }
 
     void setList(AuthorList &aList)
@@ -111,9 +111,9 @@ public:
         surname = b.getSurnameA();
         //cout<<b.aList;
         //cout<<name<<" "<<surname<<endl;
-         Node<Author> *a =b.getList().search("Sandro","Ladro");
-         //Author found = a->getValue();
-         //cout<<found<<endl<<endl;
+        Node<Author> *a =b.getList().search("Sandro","Ladro");
+        //Author found = a->getValue();
+        //cout<<found<<endl<<endl;
         return out;
     }
 

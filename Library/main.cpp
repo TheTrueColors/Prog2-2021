@@ -11,9 +11,9 @@ static void load(Library& listL,AuthorList& listA, string booksFile, string auth
     ifstream ifsA(authorFile,ifstream::in);
     while(ifsA.good())
     {
-      Author newA;
-      ifsA>>newA;
-      listA.ins(newA);
+        Author newA;
+        ifsA>>newA;
+        listA.ins(newA);
     }
 
     while(ifsB.good())
