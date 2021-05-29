@@ -16,9 +16,9 @@ private:
     string genre;
     string nameA, surnameA;
     string published;
+    AuthorList aList;
 
 public:
-    AuthorList aList;
     Book(string title, string nameA, string surnameA, int books_stock, string genre, string published) : title(title), nameA(nameA), surnameA(surnameA), books_stock(books_stock), genre(genre), published(published) {}
     Book() {}
 
@@ -52,34 +52,39 @@ public:
         return;
     }
 
-    string getTitle()
+    string getTitle()const
     {
         return title;
     }
 
-    string getNameA()
+    string getNameA()const
     {
         return nameA;
     }
 
-    string getSurnameA()
+    string getSurnameA()const
     {
         return surnameA;
     }
 
-    string getGenre()
+    string getGenre()const
     {
         return genre;
     }
 
-    string getDate()
+    string getDate()const
     {
         return published;
     }
 
-    int getStock()
+    int getStock()const
     {
         return books_stock;
+    }
+
+    AuthorList getList()const
+    {
+      return aList;
     }
 
     void setList(AuthorList &aList)
@@ -98,15 +103,15 @@ public:
     }
 
 
-    friend ostream& operator<<(ostream& out,Book& b)
+    friend ostream& operator<<(ostream& out,const Book& b)
     {
         cout<<"Book:"<<endl<<"Title: "<<b.getTitle()<<endl<<"Genre: "<<b.getGenre()<<endl<<"Published on: "<<b.getDate()<<endl;
         string name,surname;
         name = b.getNameA();
         surname = b.getSurnameA();
         //cout<<b.aList;
-        cout<<name<<" "<<surname<<endl;
-         //Node<Author> *a =b.aList.search(getNameA(),getSurnameA());
+        //cout<<name<<" "<<surname<<endl;
+         Node<Author> *a =b.getList().search("Sandro","Ladro");
          //Author found = a->getValue();
          //cout<<found<<endl<<endl;
         return out;
