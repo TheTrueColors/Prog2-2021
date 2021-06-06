@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1622309667 source:c:\users\giotu\onedrive - università degli studi di catania\documents\github\prog2-2021\queuelist\main.cpp
+	<iostream>
+	"Queue.h"
+
+1622655469 c:\users\giotu\onedrive - università degli studi di catania\documents\github\prog2-2021\queuelist\include\queue.h
+	"Node.h"
+
+1622309667 c:\users\giotu\onedrive - università degli studi di catania\documents\github\prog2-2021\queuelist\include\node.h
+	<iostream>
+

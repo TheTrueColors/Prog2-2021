@@ -72,6 +72,7 @@ public:
     friend ostream& operator<<(ostream& out,Library& list)
     {
         list.printList();
+        return out;
     }
 
 

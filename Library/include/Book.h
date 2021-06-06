@@ -103,17 +103,15 @@ public:
     }
 
 
-    friend ostream& operator<<(ostream& out,const Book& b)
+    friend ostream& operator<<(ostream& out,const Book& b)//Qui la stampa non viene effettutata correttamente per il primo autore /libro
     {
-        cout<<"Book:"<<endl<<"Title: "<<b.getTitle()<<endl<<"Genre: "<<b.getGenre()<<endl<<"Published on: "<<b.getDate()<<endl;
+        cout<<"Book:"<<endl<<"Title: "<<b.getTitle()<<endl<<"Genre: "<<b.getGenre()<<endl<<"Published on: "<<b.getDate()<<endl<<"In Stock: "<<b.getStock()<<endl;
         string name,surname;
         name = b.getNameA();
         surname = b.getSurnameA();
-        //cout<<b.aList;
-        //cout<<name<<" "<<surname<<endl;
-        Node<Author> *a =b.getList().search("Sandro","Ladro");
-        //Author found = a->getValue();
-        //cout<<found<<endl<<endl;
+        Node<Author> *a =b.getList().search(name,surname);
+        Author found = a->getValue();
+        cout<<found<<endl<<endl;
         return out;
     }
 

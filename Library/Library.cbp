@@ -15,6 +15,11 @@
 					<Add option="-g" />
 					<Add directory="Include" />
 				</Compiler>
+				<Linker>
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/Library" prefix_auto="1" extension_auto="1" />
@@ -34,11 +39,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Include/Author.h" />
-		<Unit filename="Include/AuthorList.h" />
-		<Unit filename="Include/Book.h" />
-		<Unit filename="Include/Library.h" />
-		<Unit filename="Include/Node.h" />
+		<Unit filename="include/Author.h" />
+		<Unit filename="include/AuthorList.h" />
+		<Unit filename="include/Book.h" />
+		<Unit filename="include/Library.h" />
+		<Unit filename="include/Node.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

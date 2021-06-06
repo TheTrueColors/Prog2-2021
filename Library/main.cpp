@@ -32,8 +32,6 @@ int main()
     Library lib;
     load(lib, aList, "books.txt", "authors.txt");
     cout<<lib;
-    /*Node<Author> *a =aList.search("Sandro","Ladro");
-    Author found = a->getValue();
-    cout<<endl<<found;*/
+    system("PAUSE");
     return 0;
 }

@@ -99,6 +99,7 @@ public:
     friend ostream& operator<<(ostream& out, Queue<T>& q)
     {
         q.printQ();
+        return out;
     }
 
 
