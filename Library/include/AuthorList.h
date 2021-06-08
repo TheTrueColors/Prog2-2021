@@ -55,7 +55,7 @@ public:
         {
             cur = cur->getNext();
         }
-        if(!cur)throw "author not found";
+        if(cur==tail)throw "author not found";
        // cout<<curr<<endl;
         return cur;
         }
