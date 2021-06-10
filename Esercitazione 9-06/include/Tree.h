@@ -215,7 +215,6 @@ public:
 
     void postOrder()
     {
-        cout<<"PostOrder: "<<endl;
         _postOrder(root);
         cout<<endl;
         return;
@@ -223,7 +222,6 @@ public:
 
     void preOder()
     {
-        cout<<"PreOrder: "<<endl;
         _preOrder(root);
         cout<<endl;
         return;
@@ -231,7 +229,6 @@ public:
 
     void inOrder()
     {
-        cout<<"InOrder: "<<endl;
         _inOrder(root);
         cout<<endl;
         return;

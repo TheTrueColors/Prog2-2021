@@ -123,11 +123,30 @@ void cancB(int key, Tree<Barca>& bTree)
     bTree.canc(key);
 }
 
+void formatPrint(string tipo, string lista)
+{
+    const char sep = ' ';
+    const int tabW = 2;
+    const int marcaW = 10;
+    const int cavalliW = 10;
+    cout<<endl;
+    cout <<left<<tipo<<" "<<lista<<endl<<endl;
+    cout <<left<<setw(marcaW)<<"Tipo"<<setfill(sep);
+    cout <<left<<setw(tabW)<<"|"<<setfill(sep);
+    cout <<left<<setw(marcaW)<<"Marca"<<setfill(sep);
+    cout <<left<<setw(tabW)<<"|"<<setfill(sep);
+    cout <<left<<setw(cavalliW)<<"Cavalli";
+    cout <<left<<setw(tabW)<<"|"<<endl<<endl;
+}
+
 /** Funzione per la stampa delle liste*/
 void print(ListAuto& aList, ListMoto& mList, ListBarca& bList)
 {
+    formatPrint("Lista", "auto");
     aList.print();
+    formatPrint("Lista", "moto");
     mList.print();
+    formatPrint("Lista", "barche");
     bList.print();
 }
 
@@ -178,19 +197,6 @@ int main()
     mL_thread.join();
     bL_thread.join();
 
-    cout<<endl;
-    const char sep = ' ';
-    const int tabW = 2;
-    const int marcaW = 10;
-    const int cavalliW = 10;
-    cout <<left<<setw(marcaW+2)<<""<<setfill(sep);
-    cout <<left<<setw(marcaW)<<"Liste"<<endl<<endl;
-    cout <<left<<setw(marcaW)<<"Tipo"<<setfill(sep);
-    cout <<left<<setw(tabW)<<"|"<<setfill(sep);
-    cout <<left<<setw(marcaW)<<"Marca"<<setfill(sep);
-    cout <<left<<setw(tabW)<<"|"<<setfill(sep);
-    cout <<left<<setw(cavalliW)<<"Cavalli";
-    cout <<left<<setw(tabW)<<"|"<<endl<<endl;
     print(aList, mList, bList);
 
     cout<<endl<<"Sto creando i thread per il travaso delle liste nei BST"<<endl;
@@ -207,9 +213,11 @@ int main()
 
     /**Funzione che gestisce la possibilità di effettuare cancellazioni negli alberi*/
     canc(aTree, mTree, bTree);
-
+    formatPrint("Albero", "auto");
     aTree.inOrder();
+    formatPrint("Albero", "moto");
     mTree.inOrder();
+    formatPrint("Albero", "barche");
     bTree.inOrder();
 
 
