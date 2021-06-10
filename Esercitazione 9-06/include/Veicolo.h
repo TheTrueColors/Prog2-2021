@@ -1,6 +1,9 @@
 #ifndef VEICOLO_H
 #define VEICOLO_H
 
+#include<iomanip>
+#include<iostream>
+#include<sstream>
 using namespace std;
 
 class Veicolo

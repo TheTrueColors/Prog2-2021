@@ -1,8 +1,5 @@
 #ifndef AUTO_H
 #define AUTO_H
-#include<iostream>
-#include<sstream>
-#include<string>
 
 #include <Veicolo.h>
 
@@ -14,11 +11,21 @@ public:
     Auto(string Marca, int Cavalli): Veicolo(Marca, Cavalli) {}
     Auto() {}
 
+
     /** Funzione di stampa da usare nell overload dell operatore <<*/
     string toString() const
     {
+        const char sep = ' ';
+        const int tabW = 2;
+        const int marcaW = 10;
+        const int cavalliW = 10;
         stringstream stream;
-        stream << "Sono un auto di marca " << Marca << ", di cavalli:" <<Cavalli<<endl;
+        stream <<left<<setw(marcaW)<<"Auto"<<setfill(sep);
+        stream <<left<<setw(tabW)<<"|"<<setfill(sep);
+        stream <<left<<setw(marcaW)<< Marca << setfill(sep);
+        stream <<left<<setw(tabW)<<"|"<<setfill(sep);
+        stream <<left<<setw(cavalliW)<< Cavalli;
+        stream <<left<<setw(tabW)<<"|"<<endl;
         return stream.str();
     }
 

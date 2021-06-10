@@ -19,7 +19,7 @@ private:
         {
             _postOrder(current->getLeft());
             _postOrder(current->getRight());
-            cout << *current << " ";
+            cout << *current;
         }
         else return;
     }
@@ -32,7 +32,7 @@ private:
     {
         if (current != NULL)
         {
-            cout << *current << " ";
+            cout << *current;
             _preOrder(current->getLeft());
             _preOrder(current->getRight());
 
@@ -49,7 +49,7 @@ private:
         if (current != NULL)
         {
             _inOrder(current->getLeft());
-            cout << *current << " ";
+            cout << *current;
             _inOrder(current->getRight());
 
         }

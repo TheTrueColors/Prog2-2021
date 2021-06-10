@@ -126,20 +126,19 @@ void cancB(int key, Tree<Barca>& bTree)
 /** Funzione per la stampa delle liste*/
 void print(ListAuto& aList, ListMoto& mList, ListBarca& bList)
 {
-   aList.print();
-   mList.print();
-   bList.print();
+    aList.print();
+    mList.print();
+    bList.print();
 }
 
 /** Funzione che cancella tutte le auto, moto e barche o una di una categoria sotto una cilindrata data*/
 void canc(Tree<Auto>& aTree, Tree<Moto>& mTree, Tree<Barca>& bTree)
 {
-    cout<<endl<<"Vuoi eliminare in base alla cilindrata : un auto(1), una moto(2), una barca(3) o da tutti i veicoli(4) o nessuno(0) "<<endl;
+    cout<<endl<<"Vuoi eliminare in base alla cilindrata :"<<endl<<"1) auto"<<endl<<"2) moto"<<endl<<"3) barca"<<endl<<"4) tutti i veicoli"<<endl<<"0) nessuno"<<endl;
     int c;
     cin>>c;
     if(c>0 && c<5)
     {
-        cout<<"Inserisci il limite minimo di cilindrata che vuoi mantenere: "<<endl;
         int cc;
         cin>>cc;
         if(c==1)cancA(cc, aTree);
@@ -152,6 +151,7 @@ void canc(Tree<Auto>& aTree, Tree<Moto>& mTree, Tree<Barca>& bTree)
             cancB(cc, bTree);
         }
     }
+
 }
 
 int main()
@@ -179,6 +179,18 @@ int main()
     bL_thread.join();
 
     cout<<endl;
+    const char sep = ' ';
+    const int tabW = 2;
+    const int marcaW = 10;
+    const int cavalliW = 10;
+    cout <<left<<setw(marcaW+2)<<""<<setfill(sep);
+    cout <<left<<setw(marcaW)<<"Liste"<<endl<<endl;
+    cout <<left<<setw(marcaW)<<"Tipo"<<setfill(sep);
+    cout <<left<<setw(tabW)<<"|"<<setfill(sep);
+    cout <<left<<setw(marcaW)<<"Marca"<<setfill(sep);
+    cout <<left<<setw(tabW)<<"|"<<setfill(sep);
+    cout <<left<<setw(cavalliW)<<"Cavalli";
+    cout <<left<<setw(tabW)<<"|"<<endl<<endl;
     print(aList, mList, bList);
 
     cout<<endl<<"Sto creando i thread per il travaso delle liste nei BST"<<endl;
