@@ -12,8 +12,8 @@ int main()
     tree->postOrder();
     tree->inOrder();
     tree->preOder();
-    tree->canc(10);
-    tree->postOrder();
+    tree->canc(5);
+        tree->postOrder();
     tree->inOrder();
     tree->preOder();
 }

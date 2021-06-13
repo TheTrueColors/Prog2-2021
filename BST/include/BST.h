@@ -62,22 +62,18 @@ private:
         la ricerca viene effettuta in modo ricorsivo, se la key del nodo in cui siamo arrivati è uguale alla key da trovare allora restituiamo questo nodo,
         in caso contrario si fanno due confronti per vedere se dobbiamo effettuare la ricerca nel sotto albero sinistro se la key da trovare è più piccola o nel sottoalbero destro se più grande
         se la key non viene trovata allora restituiamo NULL*/
-    Node<T> *_search(Node<T> *tmp,T key)
+   Node<T> *_search(Node<T> *tmp,T key)
     {
-            if(tmp->getKey()== key)
-            {
-                return tmp;
-            }
-            else if(key<tmp->getKey())
-            {
-                _search(tmp->getLeft(),key);
-            }
-            else if(key>=tmp->getKey())
-            {
-                _search(tmp->getRight(),key);
-            }
+          if(tmp == NULL)
+			return NULL;
+		else if(tmp->getKey() == key)
+			return tmp;
+		else if(key <= tmp->getKey())
+			return this->_search(tmp->getLeft(), key);
+		else if(key >= tmp->getKey())
+			return this->_search(tmp->getRight(), key);
 
-        return NULL;
+		return NULL;
     }
 
     /** Metodo che restituisce il puntatore ad un nodo (il max) cioè il nodo che si trova all' estrema destra, tutto effetuato in modo ricorsivo  */
@@ -126,7 +122,7 @@ private:
     }
 
 
-    /** Metodo void, che si occupa di eliminare un nodo dall'albero,
+/** Metodo void, che si occupa di eliminare un nodo dall'albero,
         tale metodo si suddivide in 3 casi:
         1° nel caso in cui il nodo da cancellare ha entrambi i figli allora si sostituisce tale nodo con il suo successore.
         2° nel caso in cui esiste solo un figlio si controlla se il nodo da eliminare è la root in questo caso si sostituisce con il figlio, se non è la root
