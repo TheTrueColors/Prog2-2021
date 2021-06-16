@@ -29,20 +29,6 @@ public:
         Cavalli = val;
     }
 
-    bool operator<(const Veicolo& v)
-    {
-        return this->Cavalli < v.Cavalli;
-    }
-
-    bool operator>(const Veicolo& v)
-    {
-        return this->Cavalli < v.Cavalli;
-    }
-
-    bool operator==(const Veicolo& v)
-    {
-        return this->Cavalli < v.Cavalli;
-    }
 
     virtual std::string toString() const = 0;
 

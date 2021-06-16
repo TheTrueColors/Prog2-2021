@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1623835236 source:c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\queue&stack\main.cpp
+	<iostream>
+	"Queue.h"
+	<fstream>
+
+1623835391 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\queue&stack\include\queue.h
+	<iostream>
+	<sstream>
+	<fstream>
+	"Node.h"
+
+1623828311 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\queue&stack\include\node.h
+	<sstream>
+

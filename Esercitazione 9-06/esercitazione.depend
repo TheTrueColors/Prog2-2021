@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1623742894 source:c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\main.cpp
+	<iostream>
+	"ListAuto.h"
+	"ListMoto.h"
+	"ListBarca.h"
+	"Tree.h"
+	<sstream>
+	<thread>
+	<fstream>
+
+1623362263 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\include\listauto.h
+	<iostream>
+	"Nodo.h"
+	"Auto.h"
+
+1623327477 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\include\nodo.h
+	<iostream>
+	<sstream>
+
+1623742090 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\include\auto.h
+	<Veicolo.h>
+
+1623741465 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\include\veicolo.h
+	<iomanip>
+	<iostream>
+	<sstream>
+
+1623340761 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\include\listmoto.h
+	<iostream>
+	"Nodo.h"
+	"Moto.h"
+
+1623363375 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\include\moto.h
+	<Veicolo.h>
+
+1623340761 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\include\listbarca.h
+	<iostream>
+	"Nodo.h"
+	"Barca.h"
+
+1623363375 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\include\barca.h
+	<Veicolo.h>
+
+1623365868 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\include\tree.h
+	"Node.h"
+
+1623326058 c:\users\tccgni96e15i754o\onedrive - università degli studi di catania\documents\github\prog2-2021\esercitazione 9-06\include\node.h
+

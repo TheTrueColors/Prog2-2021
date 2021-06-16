@@ -7,7 +7,6 @@
 #include <thread>
 #include <fstream>
 
-
 using namespace std;
 
 /** Funzione che si occupa di acquisire i dati all'interno della lista delle auto */
